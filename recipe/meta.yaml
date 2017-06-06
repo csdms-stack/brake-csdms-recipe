@@ -1,0 +1,27 @@
+{% set name = "csdms-brake" %}
+{% set version = "1.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/cmshobe/brake-model
+
+requirements:
+  build:
+    - bmi-babel
+    - brake
+  run:
+    - bmi-babel
+    - brake
+
+test:
+  requires:
+    - pymt
+
+about:
+  home: http://csdms.colorado.edu/wiki/Model:BRaKE
+  license: MIT
+  summary: BRaKE is the Blocky River and Knickpoint Evolution model
+  dev_url: https://github.com/cmshobe/brake-model
