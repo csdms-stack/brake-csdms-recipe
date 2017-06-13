@@ -10,6 +10,7 @@ source:
 
 requirements:
   build:
+    - numpy = 1.12
     - bmi-babel
     - brake
   run:
