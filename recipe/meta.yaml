@@ -11,11 +11,13 @@ source:
 requirements:
   build:
     - bmi-babel
-    - pymt
     - brake
+    - scipy <=0.18.1
   run:
     - bmi-babel
     - brake
+    - scipy <=0.18.1
+    - matplotlib
 
 test:
   requires:
