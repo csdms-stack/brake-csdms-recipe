@@ -10,11 +10,11 @@ source:
 
 requirements:
   build:
-    - bmi-babel
+    - babelizer
     - brake
     - scipy <=0.18.1
   run:
-    - bmi-babel
+    - babelizer
     - brake
     - scipy <=0.18.1
     - matplotlib
