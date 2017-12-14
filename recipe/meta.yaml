@@ -8,16 +8,17 @@ package:
 source:
   git_url: https://github.com/cmshobe/brake-model
 
+build:
+  number: 1
+
 requirements:
   build:
     - babelizer
     - brake
-    - scipy <=0.18.1
   run:
-    - babelizer
+    - cca-babel <2
+    - cca-spec-babel
     - brake
-    - scipy <=0.18.1
-    - matplotlib
 
 test:
   requires:
